@@ -1,27 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>DOM Array Methods|By Hadi</title>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>This is my landing Page</title>
 <body>
-    <h1>DOM Array Methods | By Hadi</h1>
+    <!-- Left Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="/download.jpeg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/Contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Header Section -->
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>Home</h1>
+        <p>This is my home Page</p>
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <!-- Main Content -->
     <div class="container">
-        <aside>
-            <button id="add-user">Add User</button>
-            <button id="double">Double Money</button>
-            <button id="filter">Filter Millionaires</button>
-            <button id="sort">Sort by Wealth</button>
-            <button id="sum">Add All Wealth</button>
-        </aside>
+        <h2>What is My mission</h2>
+        <p>To Become a good developer</p>
+        <p>TO rise my Pakistan</p>
 
-        <main id="main">
-            <h2><strong>User</strong> Wealth</h2>
-        </main>
+        <h2>Learn More About me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vitae! </p>
+        <h2>Projects</h2>
+        <ul>
+            <li>Html validator</li>
+            <li>Seat selector</li>
+            <li>Video player</li>
+            <li>currency rate exchange</li>
+            <li>DOM Array Methods</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae distinctio, quisquam aut magni quod, nostrum ducimus labore placeat tempora laboriosam omnis eaque facere ut molestias! Culpa possimus provident quia aperiam, accusamus quo dicta nisi sed et unde rem distinctio consectetur cumque! Iusto amet in quaerat vero omnis provident nihil?</p>
+        
+
+        <!-- Modal -->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="modal-content">
+                    <p>Register for classes</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter Email" />
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" />
+                        </div>
+                        <div>
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="password2" placeholder="Confirm Password" />
+                        </div>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="script.js"></script>
